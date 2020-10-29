@@ -42,7 +42,14 @@
           "scale": {
             "type": "threshold",
             "domain": [3, 4, 5, 6, 7],
-            "scheme": "greens"
+            "range": [
+              "#08aedf",
+              "#0fb8d2",
+              "#12c3c6",
+              "#1ad0b6",
+              "#22dda8",
+              "#29ed94"
+            ]
           }
         },
         "tooltip": [
