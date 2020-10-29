@@ -12,6 +12,20 @@
 	width: 800px;*/
 }
 
+#stacked_barchart {
+	left: 100px;
+	right: 100px;
+	/*height: 1000px;
+	width: 800px;*/
+}
+
+ #time_series {
+ 	left: 100px;
+	right: 100px;
+	/*height: 1000px;
+	width: 800px;*/
+}
+
 body{
     font-family: 'Source Sans Pro', sans-serif;
 }
