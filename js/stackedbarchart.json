@@ -1,0 +1,98 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v4.json",
+  "width": 700,
+  "data": {
+    "url": "https://raw.githubusercontent.com/mariafun/interactive_chart/main/data/master.csv"
+  },
+  "params": [
+    {
+      "name": "Age_selection",
+      "bind": {
+        "input": "select",
+        "options": [
+          null,
+          "5-14 years",
+          "15-24 years",
+          "25-34 years",
+          "35-54 years",
+          "55-74 years",
+          "75+ years"
+        ],
+        "labels": [
+          "Show All",
+          "5 to 14",
+          "15 to 24",
+          "25 to 34",
+          "35 to 54",
+          "55 to 74",
+          "75+"
+        ],
+        "name": "Age Selection: "
+      }
+    }
+  ],
+  "transform": [
+    {
+      "filter": {
+        "field": "country",
+        "oneOf": [
+          "Russian Federation",
+          "United States",
+          "Japan",
+          "France",
+          "Ukraine",
+          "Germany",
+          "Rupublic of Korea",
+          "Brazil",
+          "United Kingdoms",
+          "Italy",
+          "Mexico",
+          "Italy",
+          "Yemen",
+          "Thailand"
+        ]
+      }
+    },
+    {"filter": "Age_selection == null || datum.age == Age_selection"}
+  ],
+  "mark": "bar",
+  "encoding": {
+    "x": {
+      "aggregate": "sum",
+      "field": "suicides_no",
+      "title": "Number of Suicides"
+    },
+    "y": {
+      "field": "country",
+      "sort": {"field": "suicides_no", "order": "descending"},
+      "title": null
+    },
+    "color": {
+      "field": "age",
+      "scale": {
+        "domain": [
+          "5-14 years",
+          "15-24 years",
+          "25-34 years",
+          "35-54 years",
+          "55-74 years",
+          "75+ years"
+        ],
+        "range": [
+          "#ef476f",
+          "#ffd166",
+          "#06d6a0",
+          "#118ab2",
+          "#6a4c93",
+          "#073b4c"
+        ]
+      }
+    },
+    "tooltip": [
+      {"field": "country", "type": "nominal", "title": "Country"},
+      {"field": "sum_suicides_no", "type": "quantitative", "title": "Suicides"},
+      {"field": "age", "type": "nominal", "title": "Age"}
+    ]
+  },
+  "config": {}
+}
