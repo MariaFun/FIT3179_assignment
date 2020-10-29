@@ -1,7 +1,7 @@
 {
   "$schema": "https://vega.github.io/schema/vega-lite/v4.json",
   "width": 700,
-  "height": 360,
+  "height": 400,
   "data": {
     "url": "https://raw.githubusercontent.com/mariafun/interactive_chart/main/data/master_cleaned.csv"
   },
@@ -65,7 +65,7 @@
     "color": {
       "field": "country",
       "title": "Country",
-      "scale": {"scheme": "category20b"}
+      "scale": {"scheme": "category20c"}
     },
     "opacity": {
       "condition": {"selection": "industry", "value": 1},
