@@ -18,7 +18,7 @@
 <h2>Suicide rate across the globe</h2>
 <div id="choropleth_map"></div>
 
-<h2>Happiness and Health compared with GDP per capita</h2>
+<h3>Happiness and Health compared with GDP per capita</h3>
 <div id="scatter_plot"></div>
   
 <h3>Suicide per 100,000 Population Over Time</h2>
@@ -38,7 +38,7 @@
     // Access the Vega view instance (https://vega.github.io/vega/docs/api/view/) as result.view
   }).catch(console.error);
   
-  var vis3 = "js/timeseries_suicide.json.vg.json";
+  var vis3 = "js/timeseries_suicide.json";
   
   vegaEmbed('#time_series', vis3).then(function(result) {
     // Access the Vega view instance (https://vega.github.io/vega/docs/api/view/) as result.view
