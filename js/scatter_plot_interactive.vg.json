@@ -1,7 +1,7 @@
 {
   "$schema": "https://vega.github.io/schema/vega-lite/v4.json",
-  "width": 700,
-  "height": 450,
+  "width": 900,
+  "height": 500,
   "title": "World Happiness Score (2019)",
   "data": {
     "url": "https://raw.githubusercontent.com/mariafun/interactive_chart/main/data/2019.csv"
