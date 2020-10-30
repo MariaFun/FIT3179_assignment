@@ -4,16 +4,10 @@
   padding: 20px;
 }
 
-.container {
-    height: 200px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
-
-.item {
-    width: 10em;
-}
+DIV.container {
+    min-height: 10em;
+    display: table-cell;
+    vertical-align: middle }
 
 #scatter_plot {
 	left: 100px;
