@@ -4,6 +4,17 @@
   padding: 20px;
 }
 
+.container {
+    height: 200px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.item {
+    width: 10em;
+}
+
 #scatter_plot {
 	left: 100px;
 	right: 100px;
