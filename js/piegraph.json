@@ -1,0 +1,31 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v4.json",
+  "description": "A simple pie chart with embedded data.",
+  "data": {
+    "url": "https://raw.githubusercontent.com/mariafun/interactive_chart/main/data/master_cleaned.csv"
+  },
+  "mark": {"type": "arc", "stroke": "#fff", "strokeWidth": 3},
+  "encoding": {
+    "theta": {
+      "aggregate": "sum",
+      "field": "suicides_no",
+      "type": "quantitative"
+    },
+    "color": {
+      "field": "sex",
+      "type": "nominal",
+      "title": "Sex",
+      "scale": {"domain": ["female", "male"], "range": ["#ef476f", "#118ab2"]}
+    },
+    "tooltip": [
+      {
+        "field": "sum_suicides_no",
+        "type": "quantitative",
+        "title": "Total Number of Suicides",
+        "format": ","
+      }
+    ]
+  },
+  "view": {"stroke": null},
+  "config": {}
+}

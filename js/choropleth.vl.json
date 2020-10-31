@@ -1,6 +1,5 @@
 {
   "$schema": "https://vega.github.io/schema/vega-lite/v4.json",
-  "title": "Male Suicides between ages 15-24 (2015)",
   "width": 900,
   "height": 500,
   "data": {

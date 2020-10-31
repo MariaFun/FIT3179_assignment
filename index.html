@@ -33,10 +33,9 @@
       <p>Some text..</p>
       <p>Sunt in culpa qui officia deserunt mollit anim id est laborum consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco.</p>
     </div>
-  </div>
+</div>
 
 <div class="row">
-  <div class="leftcolumn">
     <div class="card">
       <h2>Happiness and Health compared with GDP per capita</h2>
       <h5>Title description, Sep 2, 2017</h5>
@@ -44,6 +43,11 @@
       <p>Some text..</p>
       <p>Sunt in culpa qui officia deserunt mollit anim id est laborum consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco.</p>
     </div>
+</div>
+
+
+<div class="row">
+  <div class="leftcolumn">
     <div class="card">
       <h2>Suicides per 100,000 Population Over Time</h2>
       <h5>Title description, Sep 2, 2017</h5>
@@ -57,6 +61,18 @@
       <div id="stacked_barchart" style="height:200px;"></div>
       <p>Some text..</p>
       <p>Sunt in culpa qui officia deserunt mollit anim id est laborum consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco.</p>
+    </div>
+  </div>
+  <div class="rightcolumn">
+    <div class="card">
+      <h2>About Me</h2>
+      <div class="fakeimg" style="height:590px;">Image</div>
+      <p>Some text about me in culpa qui officia deserunt mollit anim..</p>
+    </div>
+    <div class="card">
+      <h2>About Me</h2>
+      <div id="piegraph" style="height:490px;">Image</div>
+      <p>Some text about me in culpa qui officia deserunt mollit anim..</p>
     </div>
   </div>
 </div>
@@ -91,6 +107,12 @@
   var vis4 = "js/stackedbarchart.json";
   
   vegaEmbed('#stacked_barchart', vis4).then(function(result) {
+    // Access the Vega view instance (https://vega.github.io/vega/docs/api/view/) as result.view
+  }).catch(console.error);
+
+  var vis5 = "js/piegraph.json";
+  
+  vegaEmbed('#piegraph', vis5).then(function(result) {
     // Access the Vega view instance (https://vega.github.io/vega/docs/api/view/) as result.view
   }).catch(console.error);
 </script>

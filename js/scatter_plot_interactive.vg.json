@@ -1,8 +1,7 @@
 {
   "$schema": "https://vega.github.io/schema/vega-lite/v4.json",
-  "width": 800,
+  "width": 1000,
   "height": 500,
-  "title": "World Happiness Score (2019)",
   "data": {
     "url": "https://raw.githubusercontent.com/mariafun/interactive_chart/main/data/2019.csv"
   },
@@ -130,8 +129,7 @@
             "field": "Healthy life expectancy",
             "type": "quantitative",
             "format": ","
-          },
-          {"field": "Generosity", "type": "quantitative", "format": ","}
+          }
         ]
       }
     },
@@ -157,5 +155,5 @@
       }
     }
   ],
-  "config": {}
+  "config": {"view": {"stroke": "transparent"}}
 }
