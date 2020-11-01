@@ -1,6 +1,6 @@
 {
   "$schema": "https://vega.github.io/schema/vega-lite/v4.json",
-  "width": 700,
+  "width": 600,
   "height": 350,
   "data": {
     "url": "https://raw.githubusercontent.com/mariafun/interactive_chart/main/data/master.csv"

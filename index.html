@@ -12,10 +12,9 @@
    
 </head>
 <body>
-
+<div class="page">
 <div class="header">
-  <h1>The Reality of World Happiness</h1>
-  <p>Factors that affect a country's overall happiness</p>
+  <h1>The Reality of World Happiness: </h1> <h2>Factors that affect a Country's Happiness and its Sucide Rates</h2>
 </div>
 
 <div class="topnav">
@@ -25,63 +24,78 @@
   <a href="#" style="float:right">Criminal Scum</a>
 </div>
 
-<div class="row">
-    <div class="card">
-      <h2>The World's Happiness Score</h2>
-      <h5>Title description, Dec 7, 2017</h5>
-      <div id="choropleth_map"></div>
-      <p>Some text..</p>
-      <p>Sunt in culpa qui officia deserunt mollit anim id est laborum consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco.</p>
-    </div>
+<div class="row" class="container">
+  <div class="card"> 
+    <h2>Introductory</h2>
+    <p>Ever wondered how Happy our world is? In this visualisation we delve into the factors that affect a country's happiness and reveal devastating suicide statistics.
+      Our priority is to compare happiness with suicide rates indirectly, and investigate if a less happier country correlates with a higher rate of suicide. More importantly why and how?
+    </p>
+    <p>The Happiness Score is evaluated using the factors <b>GDP per Capita, Family, Life Expectancy, Freedom, Generosity and Trust Government Corruption</b>. The Happiness Score approximate is thus given a score between 0 to 10 (10 being Happy).</p>
+  </div>
 </div>
 
-<div class="row">
+<div class="row" class="container">
     <div class="card">
-      <h2>Happiness and Health compared with GDP per capita</h2>
-      <h5>Title description, Sep 2, 2017</h5>
-      <div id="scatter_plot" style="height:200px;"></div>
-      <p>Some text..</p>
-      <p>Sunt in culpa qui officia deserunt mollit anim id est laborum consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco.</p>
+      <h2>Does a Country's Perception of Corruption Massively Impact it's Happiness?</h2>
+      <h5>Happiness Score and the Perceptions of corruption in 2019</h5>
+      <div id="choropleth_map" class="container"> </div>
+      <p>In 2019 we find that the overall World's Happiness Score is around 4, where the <b><span style="color: #22dda8;">highest ranked country is Finland</span></b> with a score of <b>7.69</b> and the <b><span style="color: #08aedf;">lowest ranked country being South Sudan</span></b> with a score of <b>2.85</b>. </p>
+      <p>What is found most intriguing is the fact that places with greater Happiness Scores such as Australia and Canada have high perceptions of corruption.
+        This trend is also found in some European countries. We find that the Happiness score doesn't always necessarily correlate with perceptions of corruption but it does highlight that happier countries are likely to percieve their government as corrupt.
+      </p>
     </div>
 </div>
-
+<div class="row">
+    <div class="card">
+      <h2>Does a Country's Wealth Correlate with Happiness and Health?</h2>
+      <h5>Happiness and Life Expectancy compared with GDP per capita in 2019</h5>
+      <div id="scatter_plot" class="container"></div>
+      <p>We've all heard the well known saying that <b><span style="color: #08aedf;">"Money can't buy Happiness"</span></b>, sadly on a larger scale this is not the case.</p>
+      <p>In this case scatterplot we see a clear <b>positive linear correlation between Happiness and GDP per capita</b>. Poorer countries such as Yemen are seen to be less happy and have a lower life expectancy whereas wealthier countries such as Australia are happier and have a greater life expectancy.</p>
+      <p>In this visualisation you're able to filter by continent and fix the minimum life expectancy present on the graph. Filtering out by Continents reveals that countries in Africa suffer from low GDP per capita thus are less happier and live shorter lives compared to the rest of the continents.</p>
+    </div>
+</div>
 
 <div class="row">
   <div class="leftcolumn">
     <div class="card">
-      <h2>Suicides per 100,000 Population Over Time</h2>
-      <h5>Title description, Sep 2, 2017</h5>
-      <div id="time_series" style="height:200px;"></div>
-      <p>Some text..</p>
-      <p>Sunt in culpa qui officia deserunt mollit anim id est laborum consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco.</p>
+      <h2>Are Suicide Cases Improving over time?</h2>
+      <h5>TOP 26 Countries: Suicides per 100,000 Population Over Time (1984 to 2014)</h5>
+      <div id="time_series" class="container1"></div>
     </div>
     <div class="card">
-      <h2>Suicides Amongst Age Groups</h2>
-      <h5>Title description, Sep 2, 2017</h5>
-      <div id="stacked_barchart" style="height:200px;"></div>
-      <p>Some text..</p>
-      <p>Sunt in culpa qui officia deserunt mollit anim id est laborum consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco.</p>
+      <h2>Looking Deeper into the Population: Who is most vulnerable?</h2>
+      <h5>Number of suicides amongst age groups (1984 to 2014)</h5>
+      <div id="stacked_barchart" class="container"></div>
+      <p>The stacked bar chart shows us the total number of sucides with respect to age groups. The most vulnerable group to <b><span style="color: #6a4c93;">likely commit suicide is within 35 to 54 year olds.</span></b> Using the drop down filter we're able to see an indepth scale of the deaths. </p>
     </div>
   </div>
   <div class="rightcolumn">
     <div class="card">
-      <h2>About Me</h2>
-      <div class="fakeimg" style="height:610px;">Image</div>
-      <p>Some text about me in culpa qui officia deserunt mollit anim..</p>
+      <h2>Remarks</h2>
+      <p>This streamgraph shows that the larger the area, the greater the number of suicides over time. An interesting trend occured around the 1990s where the suicide rates per 100k population spiked, after that time it steadily declined for majority of countries.</p>
+      <p>By selecting a country from the drop down, you're able to get a closer look at the rates for each specific country.</p>
+      <p>Surprisingly, a lot of the Happier and Wealthier countries appear on the top 26 per 100k population. This is likely due to stress caused by society (thus likely would correlate with the perceptions of corruption)</p>
+      <div class="fakeimg"></div>
     </div>
     <div class="card">
-      <h2>About Me</h2>
-      <div id="piegraph" style="height:490px;">Image</div>
-      <p>Some text about me in culpa qui officia deserunt mollit anim..</p>
+      <h2>Which Sex is most vulnerable?</h2>
+      <h5>Number of suicides amongst Females and Males (1984 to 2014)</h5>
+      <div id="piegraph" class="container"></div>
+      <p>From this simple pie graph we find that <b><span style="color: #118ab2;">Males are likely to commit suicide.</span></b></p> 
+      <p>Males suffer from stereotypes where it's 'taboo' for them to speak up about emotions, the fact that men aren't able to get the same emotional support as females is why we see a large imbalance. </p>
     </div>
   </div>
 </div>
+
   
 
 
 <div class="footer">
   <h3>Visualisations created by Maria Cecilia Melin Funcich</h3>
   <h4>Data sources found here:</h4>
+</div>
+
 </div>
 
 <script type="text/javascript">
