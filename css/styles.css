@@ -21,6 +21,11 @@
 	font-size: 40px;
 }
 
+.foot {
+	font-size: 14px;
+	padding: 5px;
+}
+
 .container{
 	width: 100%;
 }
