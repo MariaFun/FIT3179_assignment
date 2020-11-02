@@ -6,21 +6,10 @@
 	width: 1300px;      
 	margin: auto;
 	padding: 25px;
-	padding-top: 30px;
+	padding-top: 10px;
  }
 
- .redText 
-{ 
-    color: #29ed94; 
-} 
 
- .container1 {
-	width: 30%;
- }
-
- .container2 {
-	 width: 70%;
- }
 
 .header {
 	background: white;
@@ -55,7 +44,7 @@ body {
 .topnav a {
 	float: left;
 	display: block;
-	color: #f2f2f2;
+	color: #333;
 	text-align: center;
 	padding: 14px 16px;
 	text-decoration: none;
@@ -75,13 +64,14 @@ body {
 .fakeimg {
 	background-color: white;
 	width: 100%;
-	padding: 20px;
+	padding: 5px;
 }
 
 /* Left column */
 .leftcolumn {   
 	float: left;
 	width: 70%;
+	
 }
   
 /* Right column */
@@ -98,6 +88,7 @@ body {
 	clear: both;
 }
 
+
 .footer {
 	padding: 20px;
 	text-align: center;
@@ -105,4 +96,4 @@ body {
 	margin-top: 20px;
 	width: 100%;
 }
-/*
+
